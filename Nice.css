@@ -1,0 +1,553 @@
+/* Created by Ketan[Be Happy😄] */
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+    background-color:pink;
+}
+.words {
+    position: relative;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+.a {
+    position: absolute;
+    animation:fade1 10s linear forwards;
+    opacity:0;
+    z-index: 6;
+}
+.b {
+    position: absolute;
+    animation:fade2 10s linear 10s forwards;
+    opacity:0;
+    z-index: 2;
+}
+.c {
+    position: absolute;
+    animation:fade3 10s linear 21s forwards;
+    top: 200px;
+    opacity:0;
+    z-index: 3;
+}
+.d {
+    position: absolute;
+    animation:fade1 10s linear 31s forwards;
+    opacity:0;
+    z-index: 4;
+}
+.e {
+    position: absolute;
+    left: 34px;
+    animation:fade2 5s linear 41s forwards;
+    opacity:0;
+    z-index: 6;
+}
+.f {
+    position: absolute;
+    animation:fade1 5s linear 46s forwards;
+    opacity:0;
+    z-index: 5;
+}
+.g {
+    position: fixed;
+    right: 25px;
+    bottom: 270px;
+    animation:fade3 5s linear 51s forwards;
+    opacity: 0;
+    z-index: 5;
+}
+.h {
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    animation:fade3 5s linear 56s forwards;
+    opacity:0;
+    z-index: 5;
+}
+.i {
+    position: absolute;
+    left: 35px;
+    top: 70px;
+    animation:fade3 5s linear 61s forwards;
+    opacity:0;
+    z-index: 5;
+}
+.j {
+    position: absolute;
+    top: 400px;
+    left: 136px;
+    animation:fade4 5s linear 66s forwards,fade5 5s linear 71s forwards;
+    opacity: 0;
+    z-index: 5;
+}
+.k {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    animation:fade3 5s linear 76s forwards;
+    opacity: 0;
+    z-index: 5;
+}
+.l {
+    position: absolute;
+    font-size: 50px;
+    top: 180px;
+    left: 135px;
+    animation: animate 2s linear infinite,fade4 5s linear 80s forwards,fade5 5s linear 80s forwards;;
+    opacity: 0;
+    z-index: 9;
+}
+.m {
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    animation: fade3 5s linear 85s forwards;
+    opacity: 0;
+    z-index: 5;
+}
+@keyframes animate {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    30%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    70%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes fade1 {
+   0% {
+    position: absolute;
+    top: -200px;
+    opacity: 0;
+  }
+  10% {
+      position: absolute;
+      top: 130px;
+      opacity: 0;
+  }
+  50% {
+    position: absolute;
+    top: 200px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 220px;
+    opacity: 0;
+  }
+}
+@keyframes fade2 {
+     0% {
+    position: absolute;
+    bottom: -30rem;
+    opacity: 0;
+  }
+    75% {
+    position: absolute;
+    bottom: -270px;
+    opacity: 1;
+  }
+   100% {
+    bottom: -270px;
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.box {
+    animation: fade4 5s linear 51s forwards,fade5 5s linear 66s forwards;
+    opacity: 0;
+}
+.teddy {
+	font-size: calc(50vmin / 260);
+	position: relative;
+	margin: auto;
+	width: 260em;
+	height: 330em;
+}
+.teddy div {
+	position: absolute;
+}
+.right-ear, .left-ear, .head, .right-eye, .left-eye, .mouth-area, .nose, .nose-inner, .right-cheek, .left-cheek, .body, .paw, .foot {
+	border-radius: 50%;
+}
+.right-ear, .left-ear {
+	background: rgb(95,60,30);
+	box-shadow: 0 0 0 20em rgb(190,120,60) inset;
+	width: 80em;
+	height: 80em;
+}
+.right-ear {
+	left: 30em;
+}
+.left-ear {
+	right: 30em;
+}
+.head {
+	background: rgb(190,120,60);
+	width: 160em;
+	height: 160em;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1;
+}
+.right-eye, .left-eye, .nose-inner {
+	background: rgb(255, 255, 255);
+}
+.right-eye, .left-eye {
+	box-shadow: 2em -2em 0 8em inset;
+	top: 65em;
+	width: 20em;
+	height: 20em;
+}
+.right-eye {
+	left: 45em;
+}
+.left-eye {
+	right: 45em;
+}
+.mouth-area {
+	background: rgb(230,160,90);
+	right: 0;
+	bottom: 5em;
+	left: 0;
+	margin: auto;
+	width: 100em;
+	height: 70em;
+}
+.nose {
+	background: rgb(0,0,0);
+	top: 15em;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 40em;
+	height: 30em;
+}
+.nose-inner {
+	top: 3em;
+	right: 8em;
+	width: 10em;
+	height: 8em;
+}
+.right-cheek, .left-cheek {
+	bottom: 10em;
+	width: 30em;
+	height: 30em;
+}
+.right-cheek {
+	box-shadow: -2em -2em 0 0 rgb(115,80,45) inset;
+	left: 20em;
+}
+.left-cheek {
+	box-shadow: 2em -2em 0 0 rgb(115,80,45) inset;
+	right: 20em;
+}
+.body {
+	background: rgb(230,160,90);
+	box-shadow: 0 0 0 24em rgb(190,120,60) inset;
+	margin: auto;
+	right: 0;
+	bottom: 22em;
+	left: 0;
+	width: 170em;
+	height: 190em;
+}
+.right-arm, .left-arm {
+	background: rgb(170,100,50);
+	top: 130em;
+	width: 70em;
+	height: 60em;
+}
+.right-arm {
+	border-radius: 70em 0 0 0 / 60em 0 0 0;
+	left: 0;
+}
+.right-arm .arm-inner {
+	border-radius: 50em 0 0 0 / 80em 0 0 0;
+	box-shadow: 22em 22em 0 0 rgb(170,100,50) inset;
+	left: 55em;
+}
+.left-arm, .left-arm .paw {
+	right: 0;
+}
+.left-arm {
+	border-radius: 0 70em 0 0 / 0 60em 0 0;
+}
+.left-arm .arm-inner {
+	border-radius: 0 50em 0 0 / 0 80em 0 0;
+	box-shadow: -22em 22em 0 0 rgb(170,100,50) inset;
+	right: 55em;
+}
+.arm-inner {
+	width: 50em;
+	height: 80em;
+	bottom: 0;
+}
+.paw {
+	background: rgb(190,120,60);
+	width: 80em;
+	height: 60em;
+	top: 30em;
+}
+.right-leg, .left-leg {
+	background: rgb(170,100,50);
+	border-radius: 45em 45em 0 0 / 70em 70em 0 0;
+	bottom: 40em;
+	width: 90em;
+	height: 70em;
+}
+.right-leg  {
+	left: 10em;
+}
+.left-leg  {
+	right: 10em;
+}
+.foot  {
+	background: rgb(230,160,90);
+	box-shadow: 0 5em 0 10em rgb(190,120,60) inset;
+	width: 100%;
+	height: 80em;
+	top: 30em;
+}
+@keyframes eyes{
+    100%{
+        border-top: 4px solid brown;
+        background-color: #f5deb3;
+        border-radius: 50px 50px 0 0;
+    }
+}
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+ }}
+@keyframes fade4 {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade5 {
+    0%,50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.box2 {
+    position: fixed;
+    width: 25vw;
+    height: 15vh;
+    background-color: white;
+    top: 30px;
+    right: 50px;
+    z-index: 2;
+    border: 2px solid;
+    border-bottom: 20px solid lightblue;
+    border-top: 20px solid lightblue;
+    animation: fade4 5s linear 56s forwards,fade5 5s linear 60s forwards,turn 5s linear 45s forwards;
+    opacity: 0;
+}
+.heart {
+    z-index: 3;
+    left: 35px;
+    top: 20px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    transform: rotate(45deg) translate(10px,10px);
+}
+.heart:before {
+    content: '';
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+}
+.heart:after {
+    content: '';
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    right: 50%;
+    bottom: 0;
+    border-radius: 50%;
+}
+@keyframes turn {
+    100% {
+        transform: rotate(-120deg);
+    }
+}
+.hearts {
+    z-index: 1;
+    left: 35px;
+    top: 10px;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    transform: rotate(45deg) translate(10px,10px);
+    animation:fall 2s linear 50s infinite;
+    opacity: 0;
+}
+.hearts:before {
+    content: '';
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+}
+.hearts:after {
+    content: '';
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    right: 50%;
+    bottom: 0;
+    border-radius: 50%;
+}
+#heart1 { 
+        top: 0px; left:60%
+        }
+#heart2 { 
+        top: -5px; left: 50%;
+        animation-delay: 50s;
+        transform: rotate(28deg); 
+        }
+#heart3 { 
+        top: 2px; left: 55%; 
+        animation-delay: 50.3s;
+        transform: rotate(28deg); 
+        }
+#heart4 {
+        top: 15px; left: 70%;
+        animation-delay: 50.6s;
+        transform: rotate(28deg); 
+        
+        }
+#heart5 {
+        top: 10px; left: 40%; 
+        animation-delay: 51s;
+        transform: rotate(28deg); 
+        }
+#heart6 { 
+        top: 20px; left: 30%; 
+        animation-delay: 51.5s;
+        transform: rotate(28deg); 
+        
+        }
+#heart7 { 
+        top: -2px; left: 45%; 
+        animation-delay: 52s;
+        transform: rotate(28deg); 
+        }
+#heart8 { 
+        top: 5px; left: 25%; 
+        animation-delay: 52.6s; 
+        transform: rotate(28deg); 
+        }
+#heart9 { 
+        top: 2px; left: 10%;
+        animation-delay: 52.3s; 
+        }
+#heart10 {
+        top: 5px; left: 15%;
+        animation-delay: 53s;
+         }
+@keyframes fall { 
+    100% { 
+      margin-top: -300px;
+      margin-left: -200px;
+      transform: rotate(360deg);
+      opacity:1;  
+      }
+}
+.heart2 {
+    z-index: 3;
+    left: 140px;
+    top: 200px;
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    background-color: crimson;
+    transform: rotate(45deg) translate(10px,10px);
+    animation: animated 2s linear infinite,fade4 5s linear 60s forwards,fade5 5s linear 65s forwards;
+    opacity: 0;
+    }
+.heart2:before {
+    content: '';
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    background-color: crimson;
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+}
+.heart2:after {
+    content: '';
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    background-color: crimson;
+    right: 50%;
+    bottom: 0;
+    border-radius: 50%;
+}
+@keyframes animated {
+    0%{
+        transform: rotate(45deg) scale(1);
+    }
+    25%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    30%{
+        transform: rotate(45deg) scale(1.0);
+    }
+    50%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    70%{
+        transform: rotate(45deg) scale(1);
+    }
+    90%{
+        transform: rotate(45deg) scale(1);
+    }
+    100%{
+        transform: rotate(45deg) scale(1);
+    }
+}
